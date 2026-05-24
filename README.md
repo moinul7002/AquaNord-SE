@@ -1,9 +1,5 @@
 # AquaNord-SE
 
-<!-- **A Multi-Source Water Quality Benchmark for Swedish Inland Waters (2000–2025)** -->
-
-<!-- > _AquaNord-SE: A Multi-Source Water Quality Benchmark for Swedish Inland Waters (2000–2025)_. In Proceedings of the 35th ACM International Conference on Information and Knowledge Management (CIKM 2026). [Authors anonymised for peer review.] -->
-
 AquaNord-SE is a large-scale, analysis-ready benchmark dataset covering **883,325 station–date instances** from **18,743 monitoring stations** across Sweden over 26 years. It co-registers quality-approved in-situ water quality chemistry with five satellite sensors, ERA5-Land and MESAN reanalysis, and 72 HydroATLAS catchment attributes, and ships a gridded Water Quality Index (WQI) NetCDF at 5 km resolution.
 
 ---
@@ -209,7 +205,5 @@ Please acknowledge the primary data sources: SLU Miljödata MVM, ERA5-Land (Cope
 ---
 
 ## Contact
-
-<!-- For questions or issues, please open a GitHub issue in this repository. -->
 
 Author contact information will be released upon publication.
