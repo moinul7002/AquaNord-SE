@@ -10,25 +10,24 @@ The dataset is available at:
 
 > **https://ida.fairdata.fi/s/NOT-FOR-PUBLICATION-M3ZYWPq5Te8t**
 
+The code repository is available for anonymous peer review at:
+
+> **https://anonymous.4open.science/r/AquaNord-SE**
+
 The dataset is released under the [AquaNord-SE Academic Research License](LICENSE_DATA.md). The code in this repository is released under the [MIT License](LICENSE).
 
 ### What is included
 
-| Component                                       | Files                                      | Size    |
-| ----------------------------------------------- | ------------------------------------------ | ------- |
-| Benchmark metadata (WQ + ERA5 + MESAN + splits) | `metadata.parquet`                         | 52 MB   |
-| CV split index                                  | `split_index.parquet`                      | 4 MB    |
-| Full feature tables (×26 years)                 | `feature_table_SE_{YYYY}.parquet`          | 133 MB  |
-| ERA5-Land station records (×26 years)           | `era5_sweden_{YYYY}.parquet`               | 1.85 GB |
-| MODIS matchups (×26 years)                      | `sweden_modis_{YYYY}_stations.parquet`     | 1.87 GB |
-| Landsat matchups (×26 years)                    | `sweden_landsat_{YYYY}_stations.parquet`   | 62 MB   |
-| Sentinel-1 matchups (×12 years)                 | `sweden_sentinel1_{YYYY}_stations.parquet` | 400 MB  |
-| Sentinel-2 matchups (×11 years)                 | `sweden_sentinel2_{YYYY}_stations.parquet` | 98 MB   |
-| Sentinel-3 matchups (×10 years)                 | `sweden_sentinel3_{YYYY}_stations.parquet` | 18 MB   |
-| HydroATLAS catchment covariates                 | `hydroatlas_station_covariates_SE.parquet` | 2 MB    |
-| Station registry                                | `slu_mvm_stations.csv`                     | 4 MB    |
-| Gridded WQI NetCDF (5 km, 2000–2025)            | `nordic_water_quality_v1.nc`               | 97 MB   |
-| Benchmark results                               | `outputs/results/*.csv`                    | ~5 MB   |
+| Component | Path | Size |
+|---|---|---|
+| Analysis-ready feature tables (×26 years) | `data/interim/SE/feature_table/feature_table_SE_{YYYY}.parquet` | 133 MB |
+| MESAN regional reanalysis (×26 years, zarr) | `data/raw/mesan/zarr/mesan_{YYYY}.zarr/` | 67.2 GB |
+| Multimodal benchmark metadata | `data/processed/nordic_multimodal_dataset/metadata.parquet` | 52 MB |
+| CV split index | `data/processed/nordic_multimodal_dataset/split_index.parquet` | 4 MB |
+| ERA5 static catchment patches | `data/processed/nordic_multimodal_dataset/patches.zarr/` | 1.4 GB |
+| Derived WQ parameters (station-level) | `data/interim/SE/derived_wq_params.parquet` | 2 MB |
+| Derived WQ time series | `data/interim/SE/derived_wq_timeseries.parquet` | 5 MB |
+| Gridded WQI NetCDF (5 km, 2000–2025) | `data/outputs/nordic_water_quality_v1.nc` | 97 MB |
 
 ---
 
@@ -106,15 +105,16 @@ Download and unzip the dataset from:
 https://ida.fairdata.fi/s/NOT-FOR-PUBLICATION-M3ZYWPq5Te8t
 ```
 
-Place the contents so that the following paths exist:
+Place the downloaded contents so that the following paths exist:
 
 ```
+data/interim/SE/feature_table/feature_table_SE_2000.parquet   (and 2001–2025)
+data/interim/SE/derived_wq_params.parquet
+data/interim/SE/derived_wq_timeseries.parquet
+data/raw/mesan/zarr/mesan_2000.zarr/                           (and 2001–2025)
 data/processed/nordic_multimodal_dataset/metadata.parquet
 data/processed/nordic_multimodal_dataset/split_index.parquet
-data/interim/SE/feature_table/feature_table_SE_2000.parquet   (and 2001–2025)
-data/raw/era5/era5_sweden_2000.parquet                         (and 2001–2025)
-data/raw/satellite/SE/sweden_modis_2000_stations.parquet       (and 2001–2025)
-... (see dataset README for full layout)
+data/processed/nordic_multimodal_dataset/patches.zarr/
 data/outputs/nordic_water_quality_v1.nc
 ```
 

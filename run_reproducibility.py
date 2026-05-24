@@ -120,9 +120,18 @@ EXPECTED_OUTPUTS = {
 }
 
 REQUIRED_DATA = [
+    # Analysis-ready feature tables
+    "data/interim/SE/feature_table/feature_table_SE_2000.parquet",
+    # Derived WQ parameters
+    "data/interim/SE/derived_wq_params.parquet",
+    "data/interim/SE/derived_wq_timeseries.parquet",
+    # MESAN reanalysis (zarr)
+    "data/raw/mesan/zarr/mesan_2000.zarr",
+    # Multimodal benchmark
     "data/processed/nordic_multimodal_dataset/metadata.parquet",
     "data/processed/nordic_multimodal_dataset/split_index.parquet",
-    "data/interim/SE/feature_table/feature_table_SE_2000.parquet",
+    "data/processed/nordic_multimodal_dataset/patches.zarr",
+    # Gridded WQI product
     "data/outputs/nordic_water_quality_v1.nc",
 ]
 
