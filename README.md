@@ -18,16 +18,14 @@ The dataset is released under the [AquaNord-SE Academic Research License](LICENS
 
 ### What is included
 
-| Component | Path | Size |
-|---|---|---|
-| Analysis-ready feature tables (×26 years) | `data/interim/SE/feature_table/feature_table_SE_{YYYY}.parquet` | 133 MB |
-| MESAN regional reanalysis (×26 years, zarr) | `data/raw/mesan/zarr/mesan_{YYYY}.zarr/` | 67.2 GB |
-| Multimodal benchmark metadata | `data/processed/nordic_multimodal_dataset/metadata.parquet` | 52 MB |
-| CV split index | `data/processed/nordic_multimodal_dataset/split_index.parquet` | 4 MB |
-| ERA5 static catchment patches | `data/processed/nordic_multimodal_dataset/patches.zarr/` | 1.4 GB |
-| Derived WQ parameters (station-level) | `data/interim/SE/derived_wq_params.parquet` | 2 MB |
-| Derived WQ time series | `data/interim/SE/derived_wq_timeseries.parquet` | 5 MB |
-| Gridded WQI NetCDF (5 km, 2000–2025) | `data/outputs/nordic_water_quality_v1.nc` | 97 MB |
+| Component                                 | Path                                                        | Size     |
+| ----------------------------------------- | ----------------------------------------------------------- | -------- |
+| Analysis-ready feature tables (×26 years) | `AquaNord-SE/feature_table/feature_table_SE_{YYYY}.parquet` | 126.6 MB |
+| Multimodal benchmark metadata             | `AquaNord-SE/multimodal/metadata.parquet`                   | 49.2 MB  |
+| CV split index                            | `AquaNord-SE/multimodal/split_index.parquet`                | 3.7 MB   |
+| Derived WQ parameters (station-level)     | `AquaNord-SE/derived_wq_params.parquet`                     | 1.5 MB   |
+| Derived WQ time series                    | `AquaNord-SE/derived_wq_timeseries.parquet`                 | 4.9 MB   |
+| Gridded WQI NetCDF (5 km, 2000–2025)      | `AquaNord-SE/se_wqi_v1.nc`                                  | 92.7 MB  |
 
 ---
 
@@ -52,7 +50,7 @@ AquaNord-SE/
 │   ├── figures/            Generated paper figures (PNG)
 │   ├── results/            Benchmark result CSVs
 │   ├── tables/             Summary tables
-│   └── nordic_water_quality_v1.nc
+│   └── se_wqi_v1.nc
 ├── run_reproducibility.py  One-command reproducibility runner
 ├── Dockerfile              Containerised environment
 ├── requirements.txt        Python dependencies
@@ -108,14 +106,13 @@ https://ida.fairdata.fi/s/NOT-FOR-PUBLICATION-M3ZYWPq5Te8t
 Place the downloaded contents so that the following paths exist:
 
 ```
-data/interim/SE/feature_table/feature_table_SE_2000.parquet   (and 2001–2025)
-data/interim/SE/derived_wq_params.parquet
-data/interim/SE/derived_wq_timeseries.parquet
-data/raw/mesan/zarr/mesan_2000.zarr/                           (and 2001–2025)
-data/processed/nordic_multimodal_dataset/metadata.parquet
-data/processed/nordic_multimodal_dataset/split_index.parquet
-data/processed/nordic_multimodal_dataset/patches.zarr/
-data/outputs/nordic_water_quality_v1.nc
+AquaNord-SE/feature_table/feature_table_SE_{YYYY}.parquet (for 2000–2025)
+AquaNord-SE/mesan/sation_mesan_{YYYY}.parquet (for 2000–2025)
+AquaNord-SE/derived_wq_params.parquet
+AquaNord-SE/derived_wq_timeseries.parquet
+AquaNord-SE/multimodal/metadata.parquet
+AquaNord-SE/multimodal/split_index.parquet
+AquaNord-SE/se_wqi_v1.nc
 ```
 
 ### 2. Run the full reproducibility pipeline
