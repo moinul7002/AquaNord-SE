@@ -1,0 +1,15 @@
+target,trophic_class,model,feature_set,rmse,r2,mae,n
+chla_ug_l,eutrophic,LightGBM,full,24.029,0.139,13.724,6965
+chla_ug_l,hypereutrophic,LightGBM,full,80.417,-0.068,38.617,1399
+chla_ug_l,mesotrophic,LightGBM,full,8.147,0.223,4.559,17731
+chla_ug_l,,LightGBM,full,19.022,0.327,7.014,5664
+chla_ug_l,oligotrophic,LightGBM,full,5.855,0.347,1.757,17541
+tp_ug_l,eutrophic,LightGBM,full,26.327,-1.099,20.484,115112
+tp_ug_l,hypereutrophic,LightGBM,full,391.47,-0.131,134.936,32459
+tp_ug_l,mesotrophic,LightGBM,full,11.108,-1.504,7.453,206776
+tp_ug_l,oligotrophic,LightGBM,full,7.48,-4.578,4.005,148291
+secchi_m,eutrophic,LightGBM,full,0.676,0.324,0.475,2328
+secchi_m,hypereutrophic,LightGBM,full,0.63,0.238,0.436,415
+secchi_m,mesotrophic,LightGBM,full,0.793,0.494,0.563,5636
+secchi_m,,LightGBM,full,1.158,0.634,0.807,3698
+secchi_m,oligotrophic,LightGBM,full,1.31,0.599,0.855,4086

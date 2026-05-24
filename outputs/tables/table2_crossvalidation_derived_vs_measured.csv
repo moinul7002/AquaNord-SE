@@ -1,0 +1,9 @@
+Comparison,Parameters,Formula,Published R²,Published reference,n,R²,RMSE,Bias
+Kratzer-derived Secchi vs measured Secchi depth,Turbidity → Secchi,Kratzer et al. (2008): Secchi = 1.7 / (turb × 0.015 + 0.04),0.82,Kratzer et al. (2008) — Baltic/Swedish lakes,784,0.52,22.359,21.103
+TSI(Chl-a) vs TSI(TP),tsi_chla vs tsi_tp,Carlson (1977) individual TSI components,0.7,Carlson (1977) — expected R²>0.7 for phytoplankton-dominated lakes,1696,0.205,22.041,-9.836
+TSI(Chl-a) vs TSI(Secchi),tsi_chla vs tsi_secchi,Carlson (1977) individual TSI components,0.65,Carlson (1977) — lower R² expected in CDOM-rich waters,688,0.633,6.351,-0.931
+TSI(TP) vs TSI(Secchi),tsi_tp vs tsi_secchi,Carlson (1977) individual TSI components,0.68,Carlson (1977) — CDOM lakes show TSI(Secchi) > TSI(TP),838,0.313,14.718,6.178
+TSI(Secchi) − TSI(Chl-a) offset — clear (<30) lakes,tsi_secchi - tsi_chla,CDOM non-algal light attenuation bias (Nordic-specific),,Carlson (1977) caution; Verspagen et al. (2006),61,,,-4.35
+TSI(Secchi) − TSI(Chl-a) offset — coloured (30–100) lakes,tsi_secchi - tsi_chla,CDOM non-algal light attenuation bias (Nordic-specific),,Carlson (1977) caution; Verspagen et al. (2006),172,,,-2.35
+TSI(Secchi) − TSI(Chl-a) offset — humic (>100) lakes,tsi_secchi - tsi_chla,CDOM non-algal light attenuation bias (Nordic-specific),,Carlson (1977) caution; Verspagen et al. (2006),52,,,2.04
+DO hypoxia prevalence (measured DO < 4 mg/L),do_mg_l,Benson & Krause (1984) — formula error < 0.5% across 0–35°C,,Benson & Krause (1984); Vaquer-Sunyer & Duarte (2008),372869,,,7.48

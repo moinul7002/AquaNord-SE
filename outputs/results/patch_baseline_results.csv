@@ -1,0 +1,13 @@
+target,model,rmse,r2,mae,n
+chla_ug_l,Patch-XGBoost,22.193,0.082,8.764,49300
+chla_ug_l,CNN-patch,23.102,0.006,9.502,49300
+chla_ug_l,CNN+Tabular,22.914,0.022,9.4,49300
+tp_ug_l,Patch-XGBoost,105.972,0.006,24.958,502632
+tp_ug_l,CNN-patch,105.797,0.01,25.469,502632
+tp_ug_l,CNN+Tabular,1986.335,-348.057,137.892,502632
+secchi_m,Patch-XGBoost,1.987,-0.122,1.379,16163
+secchi_m,CNN-patch,2.105,-0.259,1.46,16163
+secchi_m,CNN+Tabular,2.065,-0.212,1.394,16163
+chla_ug_l,ViT,23.529,-0.031,10.217,49300
+tp_ug_l,ViT,106.198,0.002,26.608,502632
+secchi_m,ViT,2.232,-0.416,1.539,16163

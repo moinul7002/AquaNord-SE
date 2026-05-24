@@ -1,0 +1,17 @@
+sensor,variable,ac_flag,rmse,mae,mbe,pearson_r,n
+MODIS,chla,all,68.396,22.052,5.484,0.075,446911
+MODIS,chla,ac_ok,65.071,21.175,4.561,0.078,444412
+MODIS,chla,ac_failure,289.153,177.947,169.752,-0.02,2499
+MODIS,turbidity,all,435.609,398.612,398.491,0.018,753455
+MODIS,turbidity,ac_ok,436.126,399.511,399.394,0.014,751330
+MODIS,turbidity,ac_failure,174.46,80.727,79.366,0.267,2125
+MODIS,secchi,all,3.957,2.918,-1.311,0.067,178380
+MODIS,secchi,ac_ok,3.859,2.869,-1.384,0.06,177227
+MODIS,secchi,ac_failure,11.563,10.393,9.883,0.223,1153
+Landsat,chla,all,130.646,51.112,38.807,0.164,17157
+Landsat,chla,ac_ok,119.63,45.784,33.608,0.209,16374
+Landsat,chla,ac_failure,273.355,162.53,147.54,-0.254,783
+S2,chla_ndci,all,26.131,13.569,6.334,0.291,17716
+S2,chla_ndci,ac_ok,26.131,13.569,6.334,0.291,17716
+S2,secchi,all,10.111,8.744,8.156,0.069,11761
+S2,secchi,ac_ok,10.111,8.744,8.156,0.069,11761

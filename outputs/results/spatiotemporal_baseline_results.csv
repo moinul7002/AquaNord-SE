@@ -1,0 +1,16 @@
+model,target,rmse,r2,mae,n
+convlstm,chla_ug_l,26.176,-0.277,12.182,49302
+convlstm,tp_ug_l,112.577,-0.121,37.019,502633
+convlstm,secchi_m,3.358,-2.205,2.78,16163
+cnn_transformer,chla_ug_l,26.241,-0.283,12.295,49302
+cnn_transformer,tp_ug_l,112.603,-0.122,37.105,502633
+cnn_transformer,secchi_m,3.295,-2.086,2.712,16163
+timesformer,chla_ug_l,26.105,-0.27,12.032,49302
+timesformer,tp_ug_l,112.56,-0.121,36.967,502633
+timesformer,secchi_m,3.315,-2.124,2.727,16163
+stgcn,chla_ug_l,23.487,-0.192,9.431,27399
+stgcn,tp_ug_l,77.959,-0.178,30.288,160291
+stgcn,secchi_m,3.606,-2.364,3.03,6911
+dcrnn,chla_ug_l,23.518,-0.195,9.457,27399
+dcrnn,tp_ug_l,78.004,-0.179,30.418,160291
+dcrnn,secchi_m,3.73,-2.598,3.172,6911

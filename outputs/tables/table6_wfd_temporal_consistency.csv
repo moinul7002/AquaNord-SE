@@ -1,0 +1,8 @@
+Parameter,n_Pre-WFD (2000–2002),median_Pre-WFD (2000–2002),IQR_Pre-WFD (2000–2002),n_Transition (2003–2007),median_Transition (2003–2007),IQR_Transition (2003–2007),n_Post-WFD (2008–2025),median_Post-WFD (2008–2025),IQR_Post-WFD (2008–2025),step_change_%,p_pre_vs_post,significant_change
+Total phosphorus (µg L⁻¹),44423,18.0,31.0,78260,16.0,29.0,356940,20.0,32.6,11.1,0.0,yes
+Total nitrogen (µg L⁻¹),349,960.0,620.0,7338,428.0,482.0,214265,588.0,652.0,-38.8,0.0,yes
+Chlorophyll-a (µg L⁻¹),4030,4.1,7.8,7508,4.1,8.8,33126,5.5,10.7,34.1,0.0,yes
+Water colour (mg Pt L⁻¹),19089,80.0,70.0,37885,80.0,90.0,187098,101.0,97.0,26.2,0.0,yes
+Secchi depth (m),64,2.85,1.925,182,2.0,1.788,15122,2.5,2.1,-12.3,0.0552,no
+Dissolved oxygen (mg L⁻¹),25719,9.9,3.5,47076,9.7,3.6,306053,9.6,3.5,-3.0,0.0,yes
+pH,41308,7.0,0.75,80002,7.0,0.79,432335,6.9,0.82,-1.4,0.0,yes

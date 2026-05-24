@@ -1,0 +1,11 @@
+Study,Depth_class,Region,n,R²,RMSE,Bias,Model,Notes
+This study,< 3 m (polymictic),Sweden — SLU MVM stations (ice-free months 5–10),1107,0.604,3.767,-2.016,ERA5-Land FLake (lmlt_c),MODELLED lake mixing-layer vs point in-situ measurements
+This study,3–10 m (transitional),Sweden — SLU MVM stations (ice-free months 5–10),35422,0.385,4.34,-0.394,ERA5-Land FLake (lmlt_c),MODELLED lake mixing-layer vs point in-situ measurements
+This study,> 10 m (stratified),Sweden — SLU MVM stations (ice-free months 5–10),34401,0.265,5.48,0.496,ERA5-Land FLake (lmlt_c),MODELLED lake mixing-layer vs point in-situ measurements
+This study,All lakes,Sweden — SLU MVM stations (ice-free months 5–10),175948,0.321,4.956,-0.372,ERA5-Land FLake (lmlt_c),MODELLED lake mixing-layer vs point in-situ measurements
+Piccolroaz et al. (2020),Mixed (deep + shallow),Alpine + boreal lakes (closest model version),~60,0.91,2.8,-0.3,ERA5-Land FLake,Best available comparator — same ERA5-Land version
+Woolway et al. (2019),Mixed global,Global lakes (~700 sites),~700,0.89,3.1,0.4,ERA5 FLake,Global benchmark; mixed depth distribution
+Pietikäinen et al. (2018),Mixed Finnish lakes,Finland — climate and water body type comparable to Sweden,~30,0.86,3.4,0.8,HIRLAM FLake,"Closest regional comparator (Scandinavia, similar lake types)"
+Layden et al. (2016),Shallow Arctic-boreal,Arctic and boreal shallow lakes,~25,0.72,4.2,1.2,CLM FLake,Shallow polymictic lakes — most comparable to Swedish dataset
+Yang et al. (2013),Shallow (< 5 m),China shallow lakes — FLake shallow regime validation,~20,0.68,4.8,1.5,FLake standalone,Original FLake limitation paper for shallow polymictic regime
+Balsamo et al. (2012),Deep European lakes,Large stratified European lakes,"~1,200",,2.5,,ERA-Interim FLake,Tuned on large deep lakes — NOT comparable to Swedish shallow lakes

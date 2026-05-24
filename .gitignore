@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.eggs/
+*.egg-info/
+dist/
+build/
+.env
+.venv/
+venv/
+
+# Data — large files on IDA, not in this repo
+data/
+*.parquet
+*.npy
+*.h5
+*.hdf5
+*.zarr/
+*.npz
+*.nc
+
+# Exceptions — keep results CSVs and figures
+!outputs/results/*.csv
+!outputs/tables/*.csv
+!outputs/figures/*.png
+
+# Notebooks / IDE
+.ipynb_checkpoints/
+.idea/
+.vscode/
+*.ipynb
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Credentials / secrets
+.env
+secrets.json
+service_account*.json
+gee_credentials*

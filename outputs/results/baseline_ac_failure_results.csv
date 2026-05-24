@@ -1,0 +1,13 @@
+target,model,feature_set,ac_flag,rmse,r2,mae,n
+chla_ug_l,LightGBM,published_alg,ac_ok,22.529,0.052,8.957,47298
+chla_ug_l,LightGBM,published_alg,ac_failure,22.324,0.119,8.696,2002
+chla_ug_l,LightGBM,full,ac_ok,18.491,0.362,6.101,47298
+chla_ug_l,LightGBM,full,ac_failure,19.012,0.361,6.216,2002
+tp_ug_l,LightGBM,published_alg,ac_ok,107.923,-0.022,27.278,492459
+tp_ug_l,LightGBM,published_alg,ac_failure,84.168,-0.012,30.251,10179
+tp_ug_l,LightGBM,full,ac_ok,101.064,0.103,17.555,492459
+tp_ug_l,LightGBM,full,ac_failure,75.441,0.187,22.401,10179
+secchi_m,LightGBM,published_alg,ac_ok,1.756,0.118,1.222,15068
+secchi_m,LightGBM,published_alg,ac_failure,1.826,0.121,1.214,1095
+secchi_m,LightGBM,full,ac_ok,1.007,0.71,0.672,15068
+secchi_m,LightGBM,full,ac_failure,1.159,0.646,0.739,1095

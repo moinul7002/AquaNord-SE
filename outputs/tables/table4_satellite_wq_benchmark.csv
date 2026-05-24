@@ -1,0 +1,6 @@
+Study,Sensor,Variable,Window_days,Region,n,R²,RMSE,Bias,Notes
+Toming et al. (2016),MERIS / OLCI,Chl-a (µg L⁻¹),±1,"Estonian lakes (boreal, CDOM-rich — comparable to Sweden)",~450,0.72,4.5,0.8,OC4ME algorithm; humic bias documented
+Alikas & Kratzer (2017),Sentinel-2 MSI,Turbidity (FNU),±1,Baltic coastal + Swedish lakes,~120,0.85,1.2,-0.1,Nechad (2010) NIR algorithm
+Alikas & Kratzer (2017),Sentinel-2 MSI,Secchi depth (m),±1,Baltic coastal + Swedish lakes,~85,0.79,0.5,0.1,Kratzer Kd-based formula
+Pahlevan et al. (2020),"Multi-mission (MERIS, OLCI, MSI)",Chl-a (µg L⁻¹),±3,Global inland waters benchmark,"~4,000",0.68,~30% MRD,,Boreal humic waters among lowest-accuracy class
+Olmanson et al. (2020),Landsat 8 OLI,Secchi depth (m),±3,Minnesota lakes (comparable boreal latitude),~600,0.82,0.61,-0.05,Landsat-class comparison for Secchi

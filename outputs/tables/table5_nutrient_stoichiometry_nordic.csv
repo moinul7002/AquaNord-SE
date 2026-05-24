@@ -1,0 +1,6 @@
+Analysis,This study,Nordic_baseline,Reference,n (this study)
+N:P limitation regime distribution,"P-limited 99%, co-limited 0%, N-limited 0%","P-limited ~60–70%, N-limited ~20% (Bergström & Jansson 2006)",Bergström & Jansson (2006) — Swedish lakes by ecoregion,11681
+log Chl-a vs log TP regression slope,slope = 0.265 (Dillon-Rigler expected: 1.449),slope = 1.38±0.15 for boreal lakes (Huser et al. 2018),Dillon & Rigler (1974); Huser et al. (2018),1696
+TOC vs water colour (CDOM) coupling,R² = 0.592 (Pearson r = 0.769),R² ≈ 0.89 for Swedish boreal lakes (Sobek et al. 2007),Sobek et al. (2007) — Swedish lake DOC-colour survey,3546
+Long-term TP trend (Sweden-wide median),"slope = -0.030 µg/L/yr (declining); R² = 0.018, p = 0.514",TP declining in most Swedish lakes post-1990s WFD measures (Jeppesen et al. 2005),Jeppesen et al. (2005); Rowe et al. (2021),18750
+Long-term water colour trend (browning/clearing),"slope = 1.710 mg Pt/L/yr (browning (increasing)); R² = 0.740, p = 0.000",Browning +1–3% yr⁻¹ in boreal Sweden 1990–2010 (Monteith et al. 2007),Monteith et al. (2007); de Wit et al. (2016),18750

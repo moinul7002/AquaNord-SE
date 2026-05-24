@@ -1,0 +1,14 @@
+Parameter,Unit,Formula,n_stations,Coverage_%,Mean,SD,P10,Median,P90
+TSI from Chl-a,dimensionless,Carlson (1977),1706,9.1,50.387,9.935,37.982,50.02,63.218
+TSI from total phosphorus,dimensionless,Carlson (1977),13920,74.2,37.871,21.68,18.135,39.773,61.322
+TSI from Secchi depth,dimensionless,Carlson (1977),846,4.5,48.77,9.647,37.44,47.799,61.542
+TSI composite (mean of available),dimensionless,Carlson (1977),13931,74.3,38.274,21.141,18.677,39.953,61.272
+CDOM absorption α(440),m⁻¹,de Wit et al. (2005),6789,36.2,5.413,2.459,2.448,5.155,8.639
+CDOM E4/E6 ratio (Abs420/Abs436),dimensionless,Ågren et al. (2008),7525,40.1,1.289,0.124,1.252,1.288,1.323
+CDOM spectral slope S(420–436),nm⁻¹,Helms et al. (2008),7525,40.1,0.016,0.003,0.014,0.016,0.018
+Dissolved oxygen deficit,mg L⁻¹,Benson & Krause (1984),3427,18.3,2.39,1.989,0.541,1.803,5.026
+DO % saturation,%,Benson & Krause (1984),3427,18.3,80.528,17.547,57.191,84.976,96.737
+Molar N:P ratio (TN:TP),mol mol⁻¹,Redfield (1958),11681,62.3,97.252,51.549,42.736,90.513,154.89
+Chl-a yield per unit TP,µg µg⁻¹,Dillon & Rigler (1974),1643,8.8,1.36,2.523,0.268,0.494,4.056
+Secchi depth from turbidity,m,Kratzer et al. (2008),9736,51.9,25.495,9.143,11.446,27.2,36.356
+Water retention time,days,Vol/Q,3172,16.9,3169.454,1025.579,1229.1,3650.0,3650.0
