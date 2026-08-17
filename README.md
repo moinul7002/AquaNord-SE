@@ -2,30 +2,40 @@
 
 AquaNord-SE is a large-scale, analysis-ready benchmark dataset covering **883,325 station–date instances** from **18,743 monitoring stations** across Sweden over 26 years. It co-registers quality-approved in-situ water quality chemistry with five satellite sensors, ERA5-Land and MESAN reanalysis, and 72 HydroATLAS catchment attributes, and ships a gridded Water Quality Index (WQI) NetCDF at 5 km resolution.
 
+Associated paper: *AquaNord-SE: A Large-Scale Longitudinal Multimodal Benchmark for Swedish Inland Water Quality*, CIKM '26. See [Citation](#citation).
+
 ---
 
 ## Dataset
 
 The dataset is available at:
 
-> **https://ida.fairdata.fi/s/NOT-FOR-PUBLICATION-M3ZYWPq5Te8t**
+> **https://doi.org/10.23729/fd-b932bcb9-1705-379e-9f47-0c0af9cbaba9**
 
-The code repository is available for anonymous peer review at:
-
-> **https://anonymous.4open.science/r/AquaNord-SE**
-
-The dataset is released under the [AquaNord-SE Academic Research License](LICENSE_DATA.md). The code in this repository is released under the [MIT License](LICENSE).
+| Component | License |
+| --- | --- |
+| Dataset | [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
+| Code (`src/`, scripts) | [MIT License](LICENSE) |
 
 ### What is included
 
 | Component                                 | Path                                                        | Size     |
 | ----------------------------------------- | ----------------------------------------------------------- | -------- |
 | Analysis-ready feature tables (×26 years) | `AquaNord-SE/feature_table/feature_table_SE_{YYYY}.parquet` | 126.6 MB |
+| MESAN station extractions (×26 years)     | `AquaNord-SE/mesan/station_mesan_{YYYY}.parquet`            | —        |
 | Multimodal benchmark metadata             | `AquaNord-SE/multimodal/metadata.parquet`                   | 49.2 MB  |
 | CV split index                            | `AquaNord-SE/multimodal/split_index.parquet`                | 3.7 MB   |
 | Derived WQ parameters (station-level)     | `AquaNord-SE/derived_wq_params.parquet`                     | 1.5 MB   |
 | Derived WQ time series                    | `AquaNord-SE/derived_wq_timeseries.parquet`                 | 4.9 MB   |
 | Gridded WQI NetCDF (5 km, 2000–2025)      | `AquaNord-SE/se_wqi_v1.nc`                                  | 92.7 MB  |
+
+### Upstream data sources and attribution
+
+AquaNord-SE is derived from SLU Miljödata MVM, Copernicus ERA5-Land and the
+Sentinel missions, SMHI MESAN, NASA/USGS MODIS and Landsat, and HydroATLAS.
+Each source retains its own licence; see [`ATTRIBUTION.md`](ATTRIBUTION.md) for
+the per-source terms. Neither the European Commission nor ECMWF is responsible
+for any use of the modified Copernicus data contained in this dataset.
 
 ---
 
@@ -54,8 +64,8 @@ AquaNord-SE/
 ├── run_reproducibility.py  One-command reproducibility runner
 ├── Dockerfile              Containerised environment
 ├── requirements.txt        Python dependencies
-├── LICENSE                 MIT License (code)
-└── LICENSE_DATA.md         Academic Research License (dataset)
+├── ATTRIBUTION.md          Per-source upstream licences
+└── LICENSE                 MIT License (code)
 ```
 
 ---
@@ -65,7 +75,7 @@ AquaNord-SE/
 ### Option 1 — Local Python environment
 
 ```bash
-git clone https://github.com/[anonymous]/AquaNord-SE.git
+git clone https://github.com/moinul7002/AquaNord-SE.git
 cd AquaNord-SE
 
 python -m venv .venv
@@ -97,17 +107,17 @@ docker run --rm --gpus all \
 
 ### 1. Download the dataset
 
-Download and unzip the dataset from:
+Download the dataset from the Etsin landing page:
 
 ```
-https://ida.fairdata.fi/s/NOT-FOR-PUBLICATION-M3ZYWPq5Te8t
+https://doi.org/10.23729/fd-b932bcb9-1705-379e-9f47-0c0af9cbaba9
 ```
 
 Place the downloaded contents so that the following paths exist:
 
 ```
 AquaNord-SE/feature_table/feature_table_SE_{YYYY}.parquet (for 2000–2025)
-AquaNord-SE/mesan/sation_mesan_{YYYY}.parquet (for 2000–2025)
+AquaNord-SE/mesan/station_mesan_{YYYY}.parquet (for 2000–2025)
 AquaNord-SE/derived_wq_params.parquet
 AquaNord-SE/derived_wq_timeseries.parquet
 AquaNord-SE/multimodal/metadata.parquet
@@ -188,19 +198,56 @@ All outputs are written to `data/outputs/figures/`, `data/outputs/tables/`, and 
 
 ## Citation
 
-Please acknowledge the primary data sources: SLU Miljödata MVM, ERA5-Land (Copernicus/ECMWF), MESAN (SMHI), Google Earth Engine, Copernicus Data Space Ecosystem, and HydroATLAS. Citations for these sources are provided in the dataset documentation. Authors will provide a full citation for the associated paper upon publication.
+If you use AquaNord-SE, please cite **both the paper and the dataset**.
 
----
+> Md Moinul Islam, Jenberia Getnet Demil, and Mourad Oussalah. 2026.
+> AquaNord-SE: A Large-Scale Longitudinal Multimodal Benchmark for Swedish
+> Inland Water Quality. In *Proceedings of the 35th ACM International
+> Conference on Information and Knowledge Management (CIKM '26)*, November
+> 7–11, 2026, Rome, Italy. ACM, New York, NY, USA.
+> https://doi.org/10.1145/3799682.3840989
 
-## Licenses
+> Md Moinul Islam, Jenberia Getnet Demil, and Mourad Oussalah. 2026.
+> AquaNord-SE: A Large-Scale Longitudinal Multimodal Benchmark for Swedish
+> Inland Water Quality. Dataset, University of Oulu, Centre for Machine Vision
+> and Signal Analysis (CMVS).
+> https://doi.org/10.23729/fd-b932bcb9-1705-379e-9f47-0c0af9cbaba9
 
-| Component              | License                                                                     |
-| ---------------------- | --------------------------------------------------------------------------- |
-| Code (`src/`, scripts) | [MIT License](LICENSE)                                                      |
-| Dataset                | [Academic Research License](LICENSE_DATA.md) — non-commercial research only |
+Please also acknowledge the primary upstream data sources: SLU Miljödata MVM,
+ERA5-Land (Copernicus/ECMWF), MESAN (SMHI), Google Earth Engine, Copernicus
+Data Space Ecosystem, and HydroATLAS. See [`ATTRIBUTION.md`](ATTRIBUTION.md).
+
+### BibTeX
+
+```bibtex
+@inproceedings{islam2026aquanordse,
+  author    = {Islam, Md Moinul and Demil, Jenberia Getnet and
+               Oussalah, Mourad},
+  title     = {{AquaNord-SE}: A Large-Scale Longitudinal Multimodal
+               Benchmark for {Swedish} Inland Water Quality},
+  booktitle = {Proceedings of the 35th ACM International Conference on
+               Information and Knowledge Management},
+  series    = {CIKM '26},
+  year      = {2026},
+  location  = {Rome, Italy},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  doi       = {10.1145/3799682.3840989}
+}
+
+@misc{islam2026aquanordsedata,
+  author       = {Islam, Md Moinul and Demil, Jenberia Getnet and
+                  Oussalah, Mourad},
+  title        = {{AquaNord-SE}: A Large-Scale Longitudinal Multimodal
+                  Benchmark for {Swedish} Inland Water Quality [Dataset] (Version 1)},
+  year         = {2026},
+  doi          = {10.23729/fd-b932bcb9-1705-379e-9f47-0c0af9cbaba9}
+}
+```
 
 ---
 
 ## Contact
 
-Author contact information will be released upon publication.
+Md Moinul Islam — moinul.islam@oulu.fi
+Centre for Machine Vision and Signal Analysis, Faculty of ITEE, University of Oulu, Finland
