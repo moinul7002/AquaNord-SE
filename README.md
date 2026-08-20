@@ -200,17 +200,16 @@ All outputs are written to `data/outputs/figures/`, `data/outputs/tables/`, and 
 
 If you use AquaNord-SE, please cite **both the paper and the dataset**.
 
-> Md Moinul Islam, Jenberia Getnet Demil, and Mourad Oussalah. 2026.
+> Md Moinul Islam, Getnet Demil, and Mourad Oussalah (2026).
 > AquaNord-SE: A Large-Scale Longitudinal Multimodal Benchmark for Swedish
 > Inland Water Quality. In *Proceedings of the 35th ACM International
 > Conference on Information and Knowledge Management (CIKM '26)*, November
-> 7–11, 2026, Rome, Italy. ACM, New York, NY, USA.
+> 07–11, 2026, Rome, Italy. ACM, New York, NY, USA.
 > https://doi.org/10.1145/3799682.3840989
 
-> Md Moinul Islam, Jenberia Getnet Demil, and Mourad Oussalah. 2026.
+> Md Moinul Islam, Getnet Demil, and Mourad Oussalah (2026).
 > AquaNord-SE: A Large-Scale Longitudinal Multimodal Benchmark for Swedish
-> Inland Water Quality. Dataset, University of Oulu, Centre for Machine Vision
-> and Signal Analysis (CMVS).
+> Inland Water Quality [Dataset] (Version 1).
 > https://doi.org/10.23729/fd-b932bcb9-1705-379e-9f47-0c0af9cbaba9
 
 Please also acknowledge the primary upstream data sources: SLU Miljödata MVM,
