@@ -225,7 +225,7 @@ Data Space Ecosystem, and HydroATLAS. See [`ATTRIBUTION.md`](ATTRIBUTION.md).
   title     = {{AquaNord-SE}: A Large-Scale Longitudinal Multimodal
                Benchmark for {Swedish} Inland Water Quality},
   booktitle = {Proceedings of the 35th ACM International Conference on
-               Information and Knowledge Management (CIKM'26)},
+               Information and Knowledge Management (CIKM '26)},
   year      = {2026},
   location  = {Rome, Italy},
   publisher = {Association for Computing Machinery},
