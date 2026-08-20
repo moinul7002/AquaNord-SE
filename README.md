@@ -220,13 +220,12 @@ Data Space Ecosystem, and HydroATLAS. See [`ATTRIBUTION.md`](ATTRIBUTION.md).
 
 ```bibtex
 @inproceedings{islam2026aquanordse,
-  author    = {Islam, Md Moinul and Demil, Jenberia Getnet and
+  author    = {Islam, Md Moinul and Demil, Getnet and
                Oussalah, Mourad},
   title     = {{AquaNord-SE}: A Large-Scale Longitudinal Multimodal
                Benchmark for {Swedish} Inland Water Quality},
   booktitle = {Proceedings of the 35th ACM International Conference on
-               Information and Knowledge Management},
-  series    = {CIKM '26},
+               Information and Knowledge Management (CIKM'26)},
   year      = {2026},
   location  = {Rome, Italy},
   publisher = {Association for Computing Machinery},
@@ -235,7 +234,7 @@ Data Space Ecosystem, and HydroATLAS. See [`ATTRIBUTION.md`](ATTRIBUTION.md).
 }
 
 @misc{islam2026aquanordsedata,
-  author       = {Islam, Md Moinul and Demil, Jenberia Getnet and
+  author       = {Islam, Md Moinul and Demil, Getnet and
                   Oussalah, Mourad},
   title        = {{AquaNord-SE}: A Large-Scale Longitudinal Multimodal
                   Benchmark for {Swedish} Inland Water Quality [Dataset] (Version 1)},
